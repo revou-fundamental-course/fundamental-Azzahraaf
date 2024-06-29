@@ -1,13 +1,14 @@
 /* Ini CSS *
 
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial scale=1.0">
-    <title></title>
-    </head>
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-    <body>
-    </body>
-</html>
+.logo-icon {
+    height: 50px;
+    width: 50px;
+    border: 1px solid;
+}
+
