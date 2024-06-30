@@ -12,9 +12,13 @@ header.nav-container {
     border: 1px solid;
 }
 
-a.home-icon {
+nav>a {
     padding-left: 32px;
     padding-right: 32px;
     border: 1px solid;
+}
+
+.banner-container {
+
 }
 
