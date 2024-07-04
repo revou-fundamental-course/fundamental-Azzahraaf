@@ -42,9 +42,8 @@ header.nav-container {
 }
 
 nav>a {
-    padding-left: 32px;
-    padding-right: 32px;
-    border: 1px solid;
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
 .banner-container {

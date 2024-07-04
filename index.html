@@ -21,17 +21,17 @@
         </div>
 
         <nav>
-            <a class="home-icon"><button style="background-color: sandybrown;">Home</button></a>
-            <a><button style="background-color: sandybrown;">Our Profile</button></a>
-            <a><button style="background-color: sandybrown;">Portofolio</button></a>
-            <a><button style="background-color: sandybrown;">Message Us</button></a>
+            <a href="#home" class="home-icon"><button style="background-color: sandybrown;">Home</button></a>
+            <a href="#our-profile"><button style="background-color: sandybrown;">Our Profile</button></a>
+            <a href="#portofolio"><button style="background-color: sandybrown;">Portofolio</button></a>
+            <a href="#message"><button style="background-color: sandybrown;">Message Us</button></a>
         </nav>
     </header>
     <hr />
 
     <main>
         <!-- Ini Home Content -->
-        <section>
+        <section id="home">
             <header class="header-wrapper">
                 <h1>Hi <span id="nama"> User,</span> Welcome to My Website!</h1>
                 <script src="js/script.js"></script>
@@ -95,7 +95,7 @@
         <hr />
 
         <!-- Ini Our Profile Content-->
-        <section>
+        <section id="our-profile">
             <header style="
                         border-radius: 10px;
                         background-color: sandybrown;
@@ -123,7 +123,7 @@
         <hr />
 
         <!-- Ini Portofolio Content -->
-        <section>
+        <section id="portofolio">
             <header style="
                     border-radius: 10px;
                     background-color: sandybrown;
@@ -144,7 +144,7 @@
         <hr />
 
         <!-- Ini Message Us Content-->
-        <section>
+        <section id="message">
             <header style="
                         border-radius: 10px;
                         background-color: sandybrown;
@@ -229,20 +229,18 @@
             </article>
 
             <!-- Ini Hasil Form -->
-            <nav style="
-                            background-clip: border-box;
-                            width: 500px;
-                            padding-left: 400px;">
-                <div style="
-                                background-color: sandybrown;
-                                border-radius: 30px;
-                                width: 80%;
-                                font-size: 20px;
-                                padding-left:25px">
-                    <p>Nama: <span id="Username"></span></p>
-                    <p>Tanggal Lahir: <span id="birthDate"></span></p>
-                    <p>Jenis Kelamin: <span id="Gender"></span></p>
-                    <p>Pesan: <span id="message-form"></span></p>
+            <nav style=" background-clip: border-box;
+                        width: 500px;
+                        padding-left: 400px;">
+                <div style="background-color: sandybrown;
+                            border-radius: 30px;
+                            width: 80%;
+                            font-size: 20px;
+                            padding-left:25px">
+                    <p>Username: <span id="username"></span></p>
+                    <p>Birth Date: <span id="birth-date"></span></p>
+                    <p>Gender: <span id="gender"></span></p>
+                    <p>Message Us: <span id="message-form"></span></p>
                 </div>
             </nav>
         </section>
