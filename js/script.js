@@ -1,9 +1,16 @@
-// Ini Java Script
 
 function replaceName() {
-    let name = prompt("Halo, siapakah nama anda?", "");
-    document.getElementById("name").innerHTML = name
+    var name = prompt("Halo, siapakah nama mu?", "");
+    document.getElementById("nama").innerText = name
 }
+
+// Replace Name
+function replaceName() {
+    var name = prompt("Masukkan nama kamu ya!", "");
+    document.getElementById("nama").innerText = name;
+}
+
+document.getElementById("tombol").addeEventListener("click", replaceName);
 
 document.getElementById ('tombol').addEventListener("click", function() {
     replaceName();
@@ -16,25 +23,50 @@ document.getElementById('kirim').addEventListener("click", function() {
 prompt()
 })
 
+// function-button
 function validateForm() {
-    const name = document.forms["message-form"]["full-name"].value;
-    const birthDate = document.forms["message-form"]["birth-date"].value;
-    const gender = document.forms["message-form"]["gender"].value;
-    const messages = document.forms["message-form"]["messages"].value;
+    // validate form
+    const username = document.getElementById('username').value;
+    const birthDate = document.getElementById('birth-date').value;
+    const gender = document.querySelector('input[name="gender"]:checked').value;
+    const message = document.getElementById('message-form').value;
+    
+    //validation
+    const eusername = document.getElementById('error-username');
+    const ebirthDate = document.getElementById('error-birthDate');
+    const egender = document.getElementById('error-gender');
+    const emessage = document.getElementById('error-message');
 
-    if (name == "" || birthDate == "" || gender == "" || messages == "") {
-        alert("Tidak boleh ada yang kosong") ;
-        return false;
-        }
-
-    setSenderUI (name, birthDate, gender, messages);
-    return false;
-
+    //input
+    const iusername = document.getElementByClassName('iusername');
+    const ibirthDate = document.getElementById('ibirthDate');
+    const igender = document.getElementById('igender');
+    const imessage = document.getElementById('imessage');
+    console.log(gender);
+    if( username.value == ""){
+        eusername.innerHTML = "masukkan nama dulu dong tsay";
+        ebirthDate.innerHTML = "";
+        egender.innerHTML = "";
+        emessage.innerHTML = "";
     }
+    
+    setSenderUI (username, birthDate, gender, message);
+    
+
+    console.log(username);
+    console.log(birthDate);
+    console.log(gender);
+    console.log(message);
+
+    return false;
+    
+    var name = prompt("Mboten angsal kosong nggeh", "");
+    document.getElementById("tombol").addEventListener("click", validateForm)
+}
 
 function setSenderUI (name, birthDate, gender, messages) {
-    document.getElementById("sender-full-name").innerHTML = name;
-    document.getElementById("sender-birth-date").innerHTML = birthDate
+    document.getElementById("sender-username").innerHTML = name;
+    document.getElementById("sender-birth-date").innerHTML = birthDate;
     document.getElementById("sender-gender").innerHTML = gender;
     document.getElementById("sender-messages").innerHTML = messages;
 }

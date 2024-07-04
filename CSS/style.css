@@ -1,4 +1,29 @@
-/* Ini CSS *
+<html style="background-color: burlywood">
+
+@media only screen and (max-width: 480px) {
+    .header wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+}
+
+.menu {
+    width: 100%;
+    flex-direction: column;
+}
+
+.logo {
+    margin-bottom: 14 px;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+    padding: 16 px;
+}
 
 header.nav-container {
     display: flex;
@@ -9,7 +34,11 @@ header.nav-container {
 .logo-icon {
     height: 50px;
     width: 50px;
-    border: 1px solid;
+    
+    /* For Image Icon */ 
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZoF0p66sV_fFnAPzpNjQ2iSQVB1dVYg_BhQ&s);
+    background-size: cover;
+    border-radius: 42%;
 }
 
 nav>a {
@@ -24,8 +53,42 @@ width: 100px;
 border: 1px solid
 }
 
-.profile-icon {
-    height: 50px;
-    width: 50px;
-    border: 1px solid;
+.profile-content {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-item {
+    text-align: center;
+}
+
+
+.profile-icon-1 {
+    height: 100px;
+    width: 100px;
+
+    /* For Image Icon */ 
+    background-image: url(../Assets/photo1.png)
+    background-size: cover;
+    border-radius: 40%;
+}
+
+.profile-icon-2 {
+    height: 100px;
+    width: 100px;
+
+    /* For Image Icon */ 
+    background-image: url(../Assets/photo2.png);
+    background-size: cover;
+    border-radius: 40%;
+}
+
+.profile-icon-3 {
+    height: 100px;
+    width: 100px;
+
+    /* For Image Icon */ 
+    background-image: url(../Assets/photo3.jpg);
+    background-size: cover;
+    border-radius: 40%;
 }
